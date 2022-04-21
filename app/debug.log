@@ -1,0 +1,60 @@
+DEBUG:asyncio:Using selector: KqueueSelector
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 30, in auth
+    token = request.session.get('authtoken').get('token')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 21, in __call__
+    self.auth(request)
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 37, in auth
+    except (jwt.ExpiredSignature, jwt.DecodeError, jwt.InvalidTokenError) as e:
+AttributeError: module 'jwt' has no attribute 'ExpiredSignature'
+INFO:django.utils.autoreload:/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+ERROR:YamUsers.AuthMiddleware:'NoneType' object has no attribute 'get'
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 30, in auth
+    token = request.session.get('authtoken').get('token')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 21, in __call__
+    self.auth(request)
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 46, in auth
+    raise PermissionDenied(error)
+django.core.exceptions.PermissionDenied: {'Error_code': 403, 'Error_Message': 'Invalid User'}
+INFO:django.utils.autoreload:/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+ERROR:YamUsers.AuthMiddleware:'NoneType' object has no attribute 'get'
+WARNING:django.request:Forbidden (Permission denied): /
+Traceback (most recent call last):
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 30, in auth
+    token = request.session.get('authtoken').get('token')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/venv/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 21, in __call__
+    self.auth(request)
+  File "/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/YamUsers/AuthMiddleware.py", line 46, in auth
+    raise PermissionDenied(error)
+django.core.exceptions.PermissionDenied: {'Error_code': 403, 'Error_Message': 'Invalid User'}
+INFO:django.utils.autoreload:/Users/christopherojeda/Desktop/NucampFolder/Python/3-DevOps/instayam_docker_aws-main/app/instayam/settings.py changed, reloading.
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
+DEBUG:asyncio:Using selector: KqueueSelector
